@@ -3,5 +3,6 @@ pandas
 Flask
 seaborn
 scikit-learn
+geopy  
 
 -e.
