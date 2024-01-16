@@ -1,0 +1,77 @@
+<html>
+<body>
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+    
+  <div class="form-group">
+    <label for="Delivery_person_age">Delivery Person Age:</label>
+    <input type="text" id="Age" name="Delivery Person Age" placeholder="Enter the age (float)">
+  </div>
+
+  
+  <div class="form-group">
+    <label for="Distance_in_km">Distance_in_km:</label>
+    <input type="text" id="distance (in km)" name="distance (in km)" placeholder="Enter the Distance_in_km (float)">
+  </div>
+  
+  <div class="form-group">
+    <label for="multiple_deliveries">Multiple Deliveries:</label>
+    <input type="number" id="multiple_deliveries" name="multiple_deliveries" placeholder="Enter the number of deliveries">
+  </div>
+  
+  <div class="form-group">
+    <label for="Type_of_vehicle">Type of Vehicle:</label>
+    <input type="text" id="Type_of_vehicle" name="Type_of_vehicle" placeholder="Enter the type of vehicle">
+  </div>
+
+  <div class="form-group">
+    <label>Festival:</label>
+    <div>
+        <input type="radio" id="festival_yes" name="Festival" value="Yes">
+        <label for="festival_yes">Yes</label>
+    </div>
+    <div>
+        <input type="radio" id="festival_no" name="Festival" value="No">
+        <label for="festival_no">No</label>
+    </div>
+
+  <div class="form-group">
+    <label for="Vehicle_condition">Vehicle_condition:</label>
+    <input type="text" id="Vehicle_condition" name="Vehicle_condition" placeholder="Enter the Vehicle_condition (float)">
+  </div>
+
+  <div class="form-group">
+  <label for="Weather_conditions">Weather_conditions:</label>
+  <select id="Weather_conditions" name="Weather_conditions">
+    <option value="Fog">Fog</option>
+    <option value="Stormy">Stormy</option>
+    <option value="Sandstorms">Sandstorms</option>
+    <option value="Windy">Windy</option>
+    <option value="Cloudy">Cloudy</option>
+    <option value="Sunny">Sunny</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="Road_traffic_density">Road_traffic_density:</label>
+  <select id="Road_traffic_density" name="Road_traffic_density">
+    <option value="Jam">Jam</option>
+    <option value="High">High</option>
+    <option value="Medium">Medium</option>
+    <option value="Low">Low</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="City">City:</label>
+  <select id="City" name="City">
+    <option value="Metropolitian">Metropolitian</option>
+    <option value="Urban">Urban</option>
+    <option value="Semi-Urban">Semi-Urban</option>
+  </select>
+</div>
+
+<div style="clear:both;"></div>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
